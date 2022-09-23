@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+body {
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+h1 {
+    color: blue;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
