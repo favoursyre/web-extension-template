@@ -4,6 +4,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import Popup from "./popup";
+// import { HashRouter as Router } from "react-router-dom";
 
 //Commencing the code
 function init() {
@@ -14,7 +15,11 @@ function init() {
   }
   const root = createRoot(appContainer);
   console.log(appContainer);
-  root.render(<Popup />);
+  root.render(
+    <React.StrictMode>
+      <Popup />
+    </React.StrictMode>
+  );
 }
 
 init();
